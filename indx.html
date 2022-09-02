@@ -8,22 +8,68 @@
     <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
-    <div class="contaner">
-        <nav>
-            <a href="index.html" class="item-active">
-                Is Triangle?
-            </a>
-            <a href="quiz.html">
-                Quiz
-            </a>
-            <a href="hypotenuse.html">
-                Hypotenuse
-            </a>
-            <a href="area.html">
-                Area
-            </a>
-        </nav>
+    <nav>
+        <a href="index.html" class="item-active">
+            Is Triangle?
+        </a>
+        <a href="quiz.html">
+            Quiz
+        </a>
+        <a href="hypotenuse.html">
+            Hypotenuse
+        </a>
+        <a href="area.html">
+            Area
+        </a>
+    </nav>
+    <div class="header">
+        <h1>
+            Is Triangle?
+        </h1>
     </div>
-    <script src="/assets/app.js"></script>
+    <div class="container">
+        <div class="group">
+            <label for="angle1">
+                Angle 1
+                <span class="required">
+                    (Required)
+                </span>
+            </label>
+            <input type="number" id="angle1">
+            <small>
+                Enter angle in degrees
+            </small>
+        </div>
+        <div class="group">
+            <label for="angle2">
+                Angle 2
+                <span class="required">
+                    (Required)
+                </span>
+            </label>
+            <input type="number" id="angle2">
+            <small>
+                Enter angle in degrees
+            </small>
+        </div>
+        <div class="group">
+            <label for="angle3">
+                Angle 3
+                <span class="required">
+                    (Required)
+                </span>
+            </label>
+            <input type="number" id="angle3">
+            <small>
+                Enter angle in degrees
+            </small>
+        </div>
+        <button class="btn" id="check_if_traiangle">
+            Is triangle?
+        </button>
+        <div class="is-triangle-outputBox">
+        </div>
+    </div>
+    <script src="/assets/isTriangle.js"></script>
 </body>
 </html>

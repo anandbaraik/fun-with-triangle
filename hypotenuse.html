@@ -8,6 +8,54 @@
     <title>Document</title>
 </head>
 <body>
-    <script src="/assets/app.js"></script>
+    <nav>
+        <a href="index.html">
+            Is Triangle?
+        </a>
+        <a href="quiz.html">
+            Quiz
+        </a>
+        <a href="hypotenuse.html" class="item-active">
+            Hypotenuse
+        </a>
+        <a href="area.html">
+            Area
+        </a>
+    </nav>
+    <div class="header">
+        <h1>
+            Check Hypotenuse
+        </h1>
+    </div>
+    <div class="code">
+        <code>
+            Length of Hypotenuse = sqrt(a² + b²)
+        </code>
+    </div>
+    <div class="container">
+        <div class="group">
+            <label for="a">
+                a (side of right triangle in cm)
+                <span class="required">
+                    *
+                </span>
+            </label>
+            <input type="number" id="a">
+        </div>
+        <div class="group">
+            <label for="b">
+                b (side of right triangle cm)
+                <span class="required">
+                    *
+                </span>
+            </label>
+            <input type="number" id="b">
+        </div>
+        <button class="btn" id="checkbtn">
+            Check hypotenuse
+        </button>
+        <div class="outputBox"></div>
+    </div>
+    <script src="/assets/hypotenuse.js"></script>
 </body>
 </html>
