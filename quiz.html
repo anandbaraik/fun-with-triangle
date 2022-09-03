@@ -8,6 +8,122 @@
     <title>Document</title>
 </head>
 <body>
-    <script src="/assets/app.js"></script>
+    <nav>
+        <a href="index.html">
+            Is Triangle?
+        </a>
+        <a href="quiz.html" class="item-active">
+            Quiz
+        </a>
+        <a href="hypotenuse.html">
+            Hypotenuse
+        </a>
+        <a href="area.html">
+            Area
+        </a>
+    </nav>
+    <div class="header">
+        <h1>
+            Triangle Quiz
+        </h1>
+    </div>
+    <div class="container">
+        <form class="quiz_form">
+            <div class="group quiz-quest">
+                <p>
+                    What is the third angle for the triangle where angle1 = 45° and angle2 = 45°?
+                </p>
+                <label>
+                    <input type="radio" name="question1" value="45°">
+                    45°
+                </label>
+                <label>
+                    <input type="radio" name="question1" value="60°">
+                    60°
+                </label>
+                <label>
+                    <input type="radio" name="question1" value="90°">
+                    90°
+                </label>
+            </div>
+
+            <div class="group quiz-quest">
+                <p>
+                    If a triangle has an angle of 90 degrees, what is it called?
+                </p>
+                <label>
+                    <input type="radio" name="question2" value="obtuse">
+                    Obtuse
+                </label>
+                <label>
+                    <input type="radio" name="question2" value="acute">
+                    Acute
+                </label>
+                <label>
+                    <input type="radio" name="question2" value="right angled">
+                    Right angled
+                </label>
+            </div>
+
+            <div class="group quiz-quest">
+                <p>
+                    A triangle in which two sides are equal is called?
+                </p>
+                <label>
+                    <input type="radio" name="question3" value="Isosceles triangle">
+                    Isosceles triangle
+                </label>
+                <label>
+                    <input type="radio" name="question3" value="Equilateral triangle">
+                    Equilateral triangle
+                </label>
+                <label>
+                    <input type="radio" name="question3" value="Scalene triangle">
+                    Scalene triangle
+                </label>
+            </div>
+
+            <div class="group quiz-quest">
+                <p>
+                    Two sides of a triangle are of lengths 5 cm and 1.5 cm. The length of the third side of the triangle cannot be?
+                </p>
+                <label>
+                    <input type="radio" name="question4" value="4.1 cm">
+                    4.1 cm
+                </label>
+                <label>
+                    <input type="radio" name="question4" value="3.6 cm">
+                    3.6 cm
+                </label>
+                <label>
+                    <input type="radio" name="question4" value="3.4 cm">
+                    3.4 cm
+                </label>
+            </div>
+            
+            <div class="group quiz-quest">
+                <p>
+                    The angles opposite to equal sides of a triangle are?
+                </p>
+                <label>
+                    <input type="radio" name="question5" value="Equal">
+                    Equal
+                </label>
+                <label>
+                    <input type="radio" name="question5" value="Unequal">
+                    Unequal
+                </label>
+                <label>
+                    <input type="radio" name="question5" value="Complementary angles">
+                    Complementary angles
+                </label>
+            </div>
+        </form>
+        <button class="btn" id="checkBtn">
+            Check score
+        </button>
+        <div class="outputBox"></div>
+    </div>
+    <script src="/assets/quiz.js"></script>
 </body>
 </html>
