@@ -15,28 +15,6 @@ body{
     text-align: center;
     margin-top: 1rem;
 }
-div.group{
-    display: flex;
-    flex-direction: column;
-    margin: 1rem 0;
-}
-div.group > label {
-    font-size: 1.1rem;
-    margin: 0;
-}
-small{
-    margin: 0;
-}
-.required{
-    font-size: 1.5rem !important;
-}
-input{
-    width: 100%;
-    max-width: 100vw;
-    height: 2.5rem;
-    border: 1px solid #115e59;
-    border-radius: 0.2rem;
-}
 .btn{
     padding: 0.6rem 5rem;
     background-color: #a7f3d0;
@@ -79,17 +57,6 @@ input{
     display: flex;
     align-items: center;
 }
-.code{
-    border: 0.2rem solid #84cc16;
-    padding: 0.5rem;
-    border-radius: 0.3rem;
-    margin-bottom: 3rem;
-}
-code {
-    font-weight: 800;
-    font-size: 1.2rem;
-}
-
 nav {
     padding: 0.2rem;
     margin: 0.5rem;
@@ -104,4 +71,16 @@ nav > a {
 .item-active{
     color: #38bdf8;
     border-bottom: 0.2rem solid #38bdf8;
+}
+.quiz-quest{
+    padding: 1.5rem;
+    border: 0.1rem solid #84cc16;
+    border-radius: 0.5rem;
+    margin: 1rem 0;
+}
+.quiz-quest > p{
+    color: #292524;
+}
+label{
+    margin-right: 0.4rem;
 }
