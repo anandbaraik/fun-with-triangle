@@ -33,4 +33,6 @@ Run
 ```bash
   - install live extension & view
 ```
+
+## Screenshot
 ![fun-with-triangle](https://user-images.githubusercontent.com/31516195/188323073-432a08eb-7bd8-401e-b98d-cb9d373ff26f.png)
