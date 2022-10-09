@@ -15,7 +15,7 @@ function checkArea() {
         return false;
     }
 
-    //check if height is nn negative value or not empty
+    //check if height is non negative value or not empty
     if((parseInt(heightInput.value) < 0) || (parseInt(heightInput.value) == 0)) {
         showMessage('Height value should be grater than 0');
         return false;
