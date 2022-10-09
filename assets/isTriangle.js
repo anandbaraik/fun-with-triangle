@@ -9,11 +9,35 @@ const isTriangleOutputBox = document.querySelector(".is-triangle-outputBox");
 checkBtn.addEventListener("click", checkIfTriangle);
 
 function checkIfTriangle() {
-    if(angle1.value && angle2.value && angle3.value) {
-        calculateSumOfAngles(angle1.value, angle2.value, angle3.value);
-    } else {
-        showMessage("All fields are required!");
+
+    //check if angle 1 is non negative value or not empty
+    if((parseInt(angle1.value) < 0) || (parseInt(angle1.value) == 0)) {
+        showMessage('Angle 1 should be grater than 0');
+        return false;
+    } else if(!angle1.value) {
+        showMessage("Angle 1 is required.");
+        return false;
     }
+
+    //check if angle 2 is non negative value or not empty
+    if((parseInt(angle2.value) < 0) || (parseInt(angle2.value) == 0)) {
+        showMessage('Angle 2 should be grater than 0');
+        return false;
+    } else if(!angle2.value) {
+        showMessage("Angle 2 is required.");
+        return false;
+    }
+
+    //check if angle 3 is non negative value or not empty
+    if((parseInt(angle3.value) < 0) || (parseInt(angle3.value) == 0)) {
+        showMessage('Angle 3 should be grater than 0');
+        return false;
+    } else if(!angle3.value) {
+        showMessage("Angle 3 is required.");
+        return false;
+    }
+
+    calculateSumOfAngles(angle1.value, angle2.value, angle3.value);
 }
 
 function showMessage(msg) {
