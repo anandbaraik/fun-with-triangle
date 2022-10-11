@@ -28,7 +28,7 @@ function showMessage(msg) {
     outputBox.innerHTML = msg;
 }
 
-//FormData() : its a part of web api. FormData interface allows us to construct a set of key/value pairs representing form fields and their values in JavaScript.
+//FormData() : its a part of web api. FormData interface allows us to construct a set of key/value pairs representing form fields and their values in JavaScript. FormData object is a common way to create a bundle of data to send to the server using XMLHttpRequest or fetch. It replicates the functionality of the HTML form element.
 
 //FormData.entries() : method returns an iterator of all key/value pairs in the FormData object.
 
